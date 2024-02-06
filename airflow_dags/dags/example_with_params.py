@@ -16,6 +16,7 @@ with DAG(
     description="An example DAG to demonstrate adhoc runs with parameters.",
     tags=["demo"],
     start_date=datetime(2024, 2, 1),
+    schedule=None,
     catchup=False,
     params={"text_to_print": Param("Lacinato Kale", type="string")},
     render_template_as_native_obj=True,
